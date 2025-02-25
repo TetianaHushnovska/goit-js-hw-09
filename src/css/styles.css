@@ -16,3 +16,119 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body{
+  letter-spacing: 4%;
+  color: #2E2F42;
+}
+
+.css-ul{
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  gap: 20px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px auto;
+  width: 1128px;
+}
+
+.gallery-item {
+  max-width: calc((100% - 96px) / 3);
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 250ms ease-in-out;
+}
+
+.gallery-link:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+.feedback-form{
+  width: 408px;
+  min-height: 200px;
+  padding: 24px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(238, 236, 236);
+}
+
+.label-email,
+.label-message {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input{
+  width: 328px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;  
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+textarea{
+  width: 328px;
+  height: 64px;
+  resize: none;
+  padding: 8px 16px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+input:hover, textarea:hover{
+  border-color: #000000;
+}
+
+button{
+  width: 95px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+button:hover{
+  background-color: #6C8CFF;
+}

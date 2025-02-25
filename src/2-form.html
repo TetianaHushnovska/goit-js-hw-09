@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,14 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Vanilla App Template</title>
+    <title>Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <ul class="css-ul">
-       
-      <li><a href="./1-gallery.html">Gallery</a></li>
-      <li><a href="./2-form.html">Form</a></li>
-    </ul>
+    <form class="feedback-form" autocomplete="off">
+      <label class="label-email">
+        Email
+        <input type="email" name="email" autofocus />
+      </label>
+      <label class="label-message">
+        Message
+        <textarea name="message" rows="8"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./js/2-form.js" type="module"></script>
   </body>
 </html>
